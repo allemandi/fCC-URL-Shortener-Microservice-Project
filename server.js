@@ -45,16 +45,6 @@ const Url = mongoose.model("Url", URL_SCHEMA);
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// var numberlol2;
-// var numberlol = Url.countDocuments({}, (err,count) => {
-//   if(err) return console.log(err);
-//   done(null, count)
-//   return numberlol2 = count
-// })
-
-// console.log(numberlol2)
-
-// Your first API endpoint
 app.post('/api/shorturl', (req, res) => {
 
   //req.body.url returns the url contained in body json object
